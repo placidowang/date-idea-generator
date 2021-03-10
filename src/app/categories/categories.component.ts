@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from '../category';
 
 @Component({
   selector: 'app-categories',
@@ -12,7 +13,10 @@ export class CategoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  category = 'Simple';
+  category: Category = {
+    id: 1,
+    name: 'Simple'
+  };
 
   // category = ['a', 'b', 'c']; 
 
