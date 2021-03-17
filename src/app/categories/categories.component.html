@@ -1,5 +1,6 @@
-<h3>{{category.name | uppercase}} Details</h3>
-<div>
-  <label for='name'>Category name: {{category.name}}</label>
-  <!-- <input id='name' [(ngModel)]="category.name" placeholder="name"> -->
-</div>
+<h2>Categories</h2>
+<ul class="categories">
+  <li>
+    <span class="badge">{{category.id}}</span> {{category.name}}
+  </li>
+</ul>
