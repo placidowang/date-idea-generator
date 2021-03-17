@@ -21,6 +21,6 @@ export class CategoriesComponent implements OnInit {
 
   // category = ['a', 'b', 'c']; 
 
-  categores = CATEGORIES;
-  
+  categories = CATEGORIES;
+
 }
