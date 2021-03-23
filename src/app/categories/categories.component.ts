@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { Category } from '../category';
+import { Category } from '../category';
 import { CATEGORIES } from '../categories';
 
 @Component({
@@ -23,4 +23,8 @@ export class CategoriesComponent implements OnInit {
 
   categories = CATEGORIES;
 
+  selectedCategory: Category;
+  onSelect(category: Category): void {
+    this.selectedCategory = category;
+  }
 }
