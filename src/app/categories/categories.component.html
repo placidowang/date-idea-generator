@@ -4,3 +4,9 @@
     <span class="badge">{{category.id}}</span> {{category.name}}
   </li>
 </ul>
+
+<h2>{{selectedCategory.name | uppercase}} Details</h2>
+<div>
+  <label for="category-name">Category name: </label>
+  <input id="category-name" [(ngModel)]="selectedCategory.name" placeholder="name">
+</div>
