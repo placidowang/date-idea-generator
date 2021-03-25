@@ -8,22 +8,15 @@ import { CATEGORIES } from '../categories';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
-
+  
+  categories = CATEGORIES;
+  selectedCategory?: Category;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // category: Category = {
-  //   id: 1,
-  //   name: 'Simple'
-  // };
-
-  // category = ['a', 'b', 'c']; 
-
-  categories = CATEGORIES;
-
-  selectedCategory: Category;
   onSelect(category: Category): void {
     this.selectedCategory = category;
   }
