@@ -8,7 +8,6 @@ import { CATEGORIES } from '../categories';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
-  
   categories = CATEGORIES;
   selectedCategory?: Category;
   
