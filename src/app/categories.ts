@@ -8,3 +8,4 @@ export const CATEGORIES: Category[] = [
   { id: 5, name: 'Whole Day'},
   { id: 6, name: 'Multi-Day'},
 ];
+
