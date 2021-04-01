@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Category } from '../category';
+
 @Component({
   selector: 'app-category-detail',
   templateUrl: './category-detail.component.html',
