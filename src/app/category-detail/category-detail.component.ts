@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Category } from '../category';
 
@@ -8,7 +8,8 @@ import { Category } from '../category';
   styleUrls: ['./category-detail.component.scss']
 })
 export class CategoryDetailComponent implements OnInit {
-
+  @Input() category?: Category;
+  
   constructor() { }
 
   ngOnInit(): void {
