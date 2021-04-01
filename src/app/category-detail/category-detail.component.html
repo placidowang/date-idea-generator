@@ -1,10 +1,10 @@
-<div *ngIf="component">
+<div *ngIf="category">
 
-    <h2>{{component.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{compnent.id}}</div>
+    <h2>{{category.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{category.id}}</div>
     <div>
-        <label for="component-name">Compnent name: </label>
-        <input id="component-name" [(ngModel)]="component.name" placeholder="name">
+        <label for="category-name">Compnent name: </label>
+        <input id="category-name" [(ngModel)]="category.name" placeholder="name">
     </div>
     
 </div>>
