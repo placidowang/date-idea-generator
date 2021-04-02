@@ -12,7 +12,8 @@ export class CategoryService {
 
   constructor() { }
 
-  getCategories(): Category[] {
-    return CATEGORIES;
+  getCategories(): Observable<Category[]> {
+    const categories = of(CATEGORIES);
+    return categories;
   }
 }
