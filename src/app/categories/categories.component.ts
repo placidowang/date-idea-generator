@@ -26,6 +26,8 @@ export class CategoriesComponent implements OnInit {
   getCategories(): void {
     // synchronous operation; won't work if categories are
     // being fetched from a server/backend
-    this.categories = this.categoryService.getCategories();
+    // this.categories = this.categoryService.getCategories();
+    this.categoryService.getCategories()
+      .subscribe(categories => this.categories = categories);
   }
 }
