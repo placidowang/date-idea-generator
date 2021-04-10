@@ -24,8 +24,8 @@ export class CategoriesComponent implements OnInit {
   }
 
   getCategories(): void {
-    // synchronous operation; won't work if categories are
-    // being fetched from a server/backend
+    // this is a synchronous operation; it won't work if categories
+    // are being fetched from a server/backend
     // this.categories = this.categoryService.getCategories();
 
     // this will wait for Observable.subscribe to emit array
